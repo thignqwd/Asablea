@@ -9,10 +9,10 @@ const PersonaSchema = new Schema({
     role: {
         type: String,
         enum:[
-            directiva,
-            user
+            'directiva',
+            'user'
         ],
-        default: user
+        default: 'user'
     },
     correo: {
         type: String,

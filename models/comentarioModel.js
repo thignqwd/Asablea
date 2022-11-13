@@ -4,11 +4,11 @@ const Schema = mongoose.Schema;
 const ComentarioSchema = new Schema({
     usuario: {
         type: Schema.ObjectId,
-        ref: persona
+        ref: 'persona'
     },
     asamblea: {
         type: Schema.ObjectId,
-        ref: asamblea
+        ref: 'asamblea'
     }
 });
 

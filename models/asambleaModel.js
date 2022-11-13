@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const AsambleaSchema = new Schema({
     usuario:{
         type: Schema.ObjectId,
-        ref: persona
+        ref: 'persona'
     },
     fecha: {
         type: String,
@@ -16,8 +16,8 @@ const AsambleaSchema = new Schema({
     },
     tipo:{
         enum:[
-            Informativa,
-            Extraordinaria
+            'Informativa',
+            'Extraordinaria'
         ]
     }
 });

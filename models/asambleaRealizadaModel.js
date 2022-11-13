@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const AsambleaRealizadaSchema = new Schema({
     asamblea:{
         type: Schema.ObjectId,
-        ref: asamblea
+        ref: 'asamblea'
     },
     acta:{
         type: String,
