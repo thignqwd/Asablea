@@ -26,7 +26,7 @@ const getAsambleasRealizadas = (req, res) => {
 const getSpecificAsambleaRealizada = (req, res) => {
     const {id} = req.params;
 
-    AsambleaRealizada.findById(id).populate({ path: 'usuario'}).exec((err, asamblea_realizada) => {
+    AsambleaRealizada.findById(id, (err, asamblea_realizada) => {
         if(err){
             return res.status(400).send({ message: "Error al obtener la asamblea"})
         }
