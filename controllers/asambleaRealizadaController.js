@@ -1,4 +1,4 @@
-const AsambleaRealizada = require('../models/asambleaModel');
+const AsambleaRealizada = require('../models/asambleaRealizadaModel');
 
 const createAsambleaRealizada = (req, res) =>{
     const {asamblea, acta} = req.body;

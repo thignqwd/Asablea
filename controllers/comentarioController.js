@@ -1,10 +1,11 @@
 const Comentario = require('../models/ComentarioModel');
 
 const createComentario = (req, res) =>{
-    const {usuario, asamblea} = req.body;
+    const {usuario, asamblea, comentariotxt} = req.body;
     const newComentario = new Comentario({
         usuario,
-        asamblea
+        asamblea,
+        comentariotxt
     });
     newComentario.save((err, comentario) => {
         if(err){

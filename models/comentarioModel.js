@@ -9,6 +9,10 @@ const ComentarioSchema = new Schema({
     asamblea: {
         type: Schema.ObjectId,
         ref: 'asamblea'
+    },
+    comentario: {
+        type: String,
+        required: true
     }
 });
 
